@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8">
+  <title>IAT Example</title>
+  <script src="../jspsych.js"></script>
+  <script src="../plugins/jspsych-iat-image_jp.js"></script>
+  <script src="../plugins/jspsych-iat-html_jp.js"></script>
+  <script src="../plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="../plugins/rt_main.js"></script>
+  <link href="../css/jspsych.css" rel="stylesheet"></link>
+</head>
+<body>
+</body>
+<script>
+
+jsPsych.init({
+    timeline: timeline,
+    on_finish: function() {
+      jsPsych.data.displayData();
+    }
+  });
+  </script>
+  </html>
