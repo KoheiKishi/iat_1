@@ -596,11 +596,11 @@ var debrief_block = {
 
       var d = (mean_correct_responses_bad_het - mean_correct_responses_bad_homo) / sd;
  */
-    return "<p>お疲れさまでした。以上で実験は終了です。</p>"+
-    "<p>ご協力くださり，本当にありがとうございました。</p>"+
-    "<p>本実験では，潜在連合テスト（Greenwald et al., 1998）と呼ばれる課題に取り組んでいただきました。</p>"+
-    "<p>異性愛者を基準とした，同性愛者に対する無意識の態度の偏りを測定できると考えられています。</p>"+
-    "<p>本実験による測定結果をお知りになりたい場合は，実験実施者にその旨お伝えください。</p>"
+    return "<p>お疲れさまでした。以上で実験は終了です。</p>" +
+    "<p>ご協力くださり，本当にありがとうございました。</p>" +
+    "<p>本実験では，潜在連合テスト（Greenwald et al., 1998）と呼ばれる課題に取り組んでいただきました。</p>" +
+    "<p>異性愛者を基準とした，同性愛者に対する無意識の態度の偏りを測定できると考えられています。</p>" +
+    "<p>本実験による測定結果をお知りになりたい場合は，実験実施者にその旨お伝えください。</p>" +
     "<p>ご希望の場合，研究終了後（最も早くて2021年3月中，遅くとも2022年3月まで），結果をお知らせいたします。</p>"
 /*         return "<p>お疲れさまでした。以上で実験は終了です。以下は実験結果の概要です。</p>"+
         "<p>「悪い・異性愛」と「良い・同性愛」の組み合わせにおいて，正答までに平均<strong>"+Math.floor(mean_correct_responses_bad_young)+"ミリ秒</strong>かかりました。</p>"+
@@ -634,4 +634,4 @@ timeline.push(trial_block6_1);
 timeline.push(trial_block6_2); */
 timeline.push(instructions_block7);
 timeline.push(trial_block7);
-timeline.push(debrief_block);
+/* timeline.push(debrief_block); */
