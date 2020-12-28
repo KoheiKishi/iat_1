@@ -24,7 +24,8 @@ var category_block = {
   "<img src='" + repo_site + "img/03_hetero_symbol.jpg'></img>  " + "<img src='" + repo_site + "img/04_hetero_symbol_mirror.jpg'></img>  " +
   "<img src='" + repo_site + "img/07_hetero_doll.jpg'></img>  " + "<img src='" + repo_site + "img/08_hetero_doll_mirror.jpg'></img>  " +
   '異性愛　異性愛者<br><br>' +
-  "キーを押して，次に進んでください。</p>",
+  "スペースキーを押して，次に進んでください。</p>",
+  choices: ['space'],
   post_trial_gap: 1000
 };
 
@@ -37,7 +38,8 @@ var instructions_block = {
   "<br>ターゲットは一つずつ現れます。<br><br>" + 
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
   "できるだけ速く，かつ正確に回答してください。<br><br> " +
-  "準備ができたら，キーを押して始めてください。</div>",
+  "準備ができたら，スペースキーを押して始めてください。</div>",
+  choices: ['space'],
 };
 
 
@@ -87,7 +89,8 @@ var instructions_block2 = {
   "<br>ターゲットは一つずつ現れます。<br><br>" +
   "間違えると赤いＸが現れます。" + 
   "<br>反対のキーを押して，次に進んでください。" + 
-  "<br><br>準備ができたら，キーを押して始めてください。</div>",
+  "<br><br>準備ができたら，スペースキーを押して始めてください。</div>",
+  choices: ['space'],
 };
 
 var trial_block2 = {
@@ -140,7 +143,8 @@ var instructions_block3_1 = {
   "キーを押してください。<br>" + "「良い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
   "できるだけ速く，かつ正確に回答してください。<br><br> " +
-  "準備が出来たら，キーを押して始めてください。</div>",
+  "準備が出来たら，スペースキーを押して始めてください。</div>",
+  choices: ['space'],
 };
 
 var trial_block3_1 = {
@@ -274,7 +278,8 @@ var instructions_block4 = {
   "「良い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
   "できるだけ速く，かつ正確に回答してください。<br><br> " +
-  "準備が出来たら，キーを押して始めてください。</div>",
+  "準備が出来たら，スペースキーを押して始めてください。</div>",
+  choices: ['space'],
 };
 
 var trial_block4 = {
@@ -340,7 +345,8 @@ var trial_block4 = {
     "<br>「同性愛」カテゴリーに属するターゲットが現れたら，右手の指で<strong>I</strong>キーを押してください。" +
     "<br>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。" + 
     "<br>できるだけ速く，かつ正確に回答してください。<br><br> " +
-    "準備ができたら，キーを押して始めてください。</div>",
+    "準備ができたら，スペースキーを押して始めてください。</div>",
+    choices: ['space'],
   };
 
 var trial_block5 = { 
@@ -383,14 +389,15 @@ var trial_block5 = {
 
   var instructions_block6_1 = {
     type: 'html-keyboard-response',
-    stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br>" + 
+    stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + 
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
     "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br>「悪い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>" +
     "キーを押してください。<br>" + "「良い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
     "できるだけ速く，かつ正確に回答してください。<br><br> " +
-    "準備が出来たら，キーを押して始めてください。</div>",
+    "準備が出来たら，スペースキーを押して始めてください。</div>",
+    choices: ['space'],
   };
 
   var trial_block6_1 = {
@@ -524,8 +531,9 @@ var trial_block5 = {
     "「良い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
     "できるだけ速く，かつ正確に回答してください。<br><br> " +
-    "準備が出来たら，キーを押して始めてください。</div>",
-    };
+    "準備が出来たら，スペースキーを押して始めてください。</div>",
+    choices: ['space'],
+  };
 
 var trial_block7 = {
   timeline: [
