@@ -458,7 +458,7 @@ var trial_block5 = {
       {type: 'iat-html', stimulus: "幸せな", stim_key_association: "right"}
     ],
     randomize_order: true,
-    repetitions: 1
+    repetitions: 2
   };
 /* 
   var instructions_block6_2 = {
