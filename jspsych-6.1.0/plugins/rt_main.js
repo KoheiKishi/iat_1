@@ -33,7 +33,7 @@ var instructions_block = {
   type: 'html-keyboard-response',
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br><strong>同性愛</strong></p></div>" +
   "<div style='position: absolute; top: 18%; right: 20%'><p style='font-size:24pt'>I<br><br><strong>異性愛</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習<br><br><br><br>「同性愛」カテゴリーに属するターゲットが現れたら，左手の指で<strong>E</strong>キーを押してください。" +
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習ブロック<br><br><br><br>「同性愛」カテゴリーに属するターゲットが現れたら，左手の指で<strong>E</strong>キーを押してください。" +
   "<br>「異性愛」カテゴリーに属するターゲットが現れたら，右手の指で<strong>I</strong>キーを押してください。<br><br>" +
 /*   "<br>ターゲットは一つずつ現れます。<br><br>" +  */
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -85,7 +85,7 @@ var instructions_block2 = {
   type: 'html-keyboard-response',
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br><strong>悪い</strong></p></div>" +
   "<div style='position: absolute; top: 18%; right: 20%'><p style='font-size:24pt'>I<br><br><strong>良い</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習<br><br><br><br>「悪い」カテゴリーに属するターゲットが現れたら，左手の指で<strong>E</strong>キーを押してください。" +
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習ブロック<br><br><br><br>「悪い」カテゴリーに属するターゲットが現れたら，左手の指で<strong>E</strong>キーを押してください。" +
   "<br>「良い」カテゴリーに属するターゲットが現れたら，右手の指で<strong>I</strong>キーを押してください。<br><br>" + 
 /*   "ターゲットは一つずつ現れます。<br><br>" + */
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -141,7 +141,7 @@ var instructions_block3_1 = {
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" +
   "<strong>悪い</strong><br><br>" + "<strong>同性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" +
   "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>異性愛</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習<br><br><br><br><br><br><br>「悪い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>" +
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習ブロック<br><br><br><br><br><br><br>「悪い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>" +
   "キーを押してください。<br>" + "「良い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
   "できるだけ速く，かつ正確に回答してください。<br><br> " +
@@ -278,7 +278,7 @@ var instructions_block4 = {
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" +
   "<strong>悪い</strong><br><br>" + "<strong>同性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" +
   "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>異性愛</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>本番</strong><br>直前と同じ配置です。<br><br><br><br><br><br>" + 
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>本番ブロック</strong><br>直前と同じ配置です。<br><br><br><br><br><br>" + 
   "「悪い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>キーを押してください。<br>" +
   "「良い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -346,7 +346,7 @@ var trial_block4 = {
     type: 'html-keyboard-response',
     stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + "<strong>異性愛</strong></div>" +
     "<div style='position: absolute; top: 18%; right: 20%'><p style='font-size:24pt'>I<br><br>" + "<strong>同性愛</strong></p></div>" +
-    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習<br>これまでと配置が逆になっています。<br><br><br><br><br><br>" + 
+    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習ブロック<br>これまでと配置が逆になっています。<br><br><br><br><br><br>" + 
     "「異性愛」カテゴリーに属するターゲットが現れたら，左手の指で<strong>E</strong>キーを押してください。<br>" +
     "「同性愛」カテゴリーに属するターゲットが現れたら，右手の指で<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -399,7 +399,7 @@ var trial_block5 = {
     stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + 
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
-    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習<br><br><br><br><br><br><br>「悪い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>" +
+    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>練習ブロック<br><br><br><br><br><br><br>「悪い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>" +
     "キーを押してください。<br>" + "「良い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
     "できるだけ速く，かつ正確に回答してください。<br><br> " +
@@ -536,7 +536,7 @@ var trial_block5 = {
     stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + 
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
-    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>本番</strong><br>直前と同じ配置です。<br><br><br><br><br>" + 
+    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>本番ブロック</strong><br>直前と同じ配置です。<br><br><br><br><br>" + 
     "「悪い」または「異性愛」カテゴリーに属するターゲットが現れたら，<strong>E</strong>キーを押してください。<br>" +
     "「良い」または「同性愛」カテゴリーに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
