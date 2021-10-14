@@ -165,7 +165,7 @@
 
       // gather the data to store for the trial
       var trial_data = {
-        "rt": Math.round(response.rt*10)/10,
+        "rt": Math.round(response.rt),
         "stimulus": trial.stimulus,
         "key_press": response.key,
         "correct": response.correct
