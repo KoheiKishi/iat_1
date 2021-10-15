@@ -10,12 +10,19 @@ var welcome_block = {
   post_trial_gap: 1000
 };
 
-var category_block = {
+var category_block_1 = {
   type: 'html-keyboard-response',
   stimulus: '<p>これから，いくつかのターゲット（単語と画像）を呈示します。' + 
   '<br>それらをEキーとIキーを使って，4つのグループに分類していただきます。' + 
-  '<br>グループと，それぞれに属する単語と画像は，以下の通りです。<br><br>' +
-  '<strong>良い</strong>:<br>' + '嬉しさ　愛情　平和　素晴らしい　楽しみな　輝かしい　笑い　幸せな<br><br>' +
+  '<br>グループと，それぞれに属する単語と画像は，次のページの通りです。<br><br>' +
+  "スペースキーを押して，次に進んでください。</p>",
+  choices: ['space'],
+  post_trial_gap: 1000
+};
+
+var category_block_2 = {
+  type: 'html-keyboard-response',
+  stimulus: '<strong>良い</strong>:<br>' + '嬉しさ　愛情　平和　素晴らしい　楽しみな　輝かしい　笑い　幸せな<br><br>' +
   '<strong>悪い</strong>:<br>' + '苦悩　ひどい　恐ろしい　意地の悪い　邪悪な　すさまじい　失敗　害する<br><br>' +
   '<strong>同性愛</strong>:<br>' + "<img src='" + repo_site + "img/01_gay_symbol.jpg'></img>  " +
   "<img src='" + repo_site + "img/02_lesbian_symbol.jpg'></img>  " + "<img src='" + repo_site + "img/05_gay_doll.jpg'></img>  " +
@@ -50,8 +57,10 @@ var trial_block = {
       type: jsPsych.timelineVariable('type'),
       stimulus: jsPsych.timelineVariable('stimulus'),
       stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-      html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+      // bottom_instructions: "<div style='position: relative; top: 90%; margin-left: auto; margin-right: auto'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
+      html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+      bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
       force_correct_key_press: true,
       display_feedback: true,
       trial_duration: 3000, //Only if display_feedback is false
@@ -101,8 +110,10 @@ var trial_block2 = {
       type: 'iat-html',
       stimulus: jsPsych.timelineVariable('stimulus'),
       stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-      html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+      // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+      bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
       force_correct_key_press: true,
       display_feedback: true,
       trial_duration: 3000, //Only if display_feedback is false
@@ -141,7 +152,7 @@ var instructions_block3_1 = {
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" +
   "<strong>悪い</strong><br><br>" + "<strong>同性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" +
   "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>異性愛</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>【ブロック3】<br><br><br><br><br><br><br>「悪い」または「同性愛」グループに属するターゲットが現れたら，<strong>E</strong>" +
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>【ブロック3】<br><br><br><br><br><br><br><br>「悪い」または「同性愛」グループに属するターゲットが現れたら，<strong>E</strong>" +
   "キーを押してください。<br>" + "「良い」または「異性愛」グループに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
   "できるだけ速く，かつ正確に回答してください。<br><br> " +
@@ -156,8 +167,10 @@ var trial_block3_1 = {
       type: jsPsych.timelineVariable('type'),
       stimulus: jsPsych.timelineVariable('stimulus'),
       stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-      html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+      // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+      bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
       force_correct_key_press: true,
       display_feedback: true,
       trial_duration: 3000, //Only if display_feedback is false
@@ -278,7 +291,7 @@ var instructions_block4 = {
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" +
   "<strong>悪い</strong><br><br>" + "<strong>同性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" +
   "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>異性愛</strong></p></div>" +
-  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>【ブロック4】</strong><br>直前と同じ配置です。<br><br><br><br><br><br>" + 
+  "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>【ブロック4】</strong><br>直前と同じ配置です。<br><br><br><br><br><br><br>" + 
   "「悪い」または「同性愛」グループに属するターゲットが現れたら，<strong>E</strong>キーを押してください。<br>" +
   "「良い」または「異性愛」グループに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
   "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -295,9 +308,11 @@ var trial_block4 = {
         is_html: jsPsych.timelineVariable('is_html'),
         stimulus: jsPsych.timelineVariable('stimulus'),
         stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-        html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
-        force_correct_key_press: true,
+        // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+        // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+        html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+        bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
+          force_correct_key_press: true,
         display_feedback: true,
         trial_duration: 3000, //Only if display_feedback is false
         left_category_key: 'E',
@@ -363,8 +378,10 @@ var trial_block5 = {
         is_html: jsPsych.timelineVariable('is_html'),
         stimulus: jsPsych.timelineVariable('stimulus'),
         stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-        html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-        bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+        // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+        // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+        html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+        bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
         force_correct_key_press: true,
         display_feedback: true,
         trial_duration: 3000, //Only if display_feedback is false
@@ -399,7 +416,7 @@ var trial_block5 = {
     stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + 
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
-    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>【ブロック6】<br><br><br><br><br><br><br>「悪い」または「異性愛」グループに属するターゲットが現れたら，<strong>E</strong>" +
+    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'>【ブロック6】<br><br><br><br><br><br><br><br>「悪い」または「異性愛」グループに属するターゲットが現れたら，<strong>E</strong>" +
     "キーを押してください。<br>" + "「良い」または「同性愛」グループに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" +
     "できるだけ速く，かつ正確に回答してください。<br><br> " +
@@ -414,8 +431,10 @@ var trial_block5 = {
       type: jsPsych.timelineVariable('type'),
       stimulus: jsPsych.timelineVariable('stimulus'),
       stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-      html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+      // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+      html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+      bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
       force_correct_key_press: true,
       display_feedback: true,
       trial_duration: 3000, //Only if display_feedback is false
@@ -536,7 +555,7 @@ var trial_block5 = {
     stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p style='font-size:24pt'>E<br><br>" + 
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
-    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>【ブロック7】</strong><br>直前と同じ配置です。<br><br><br><br><br>" + 
+    "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>【ブロック7】</strong><br>直前と同じ配置です。<br><br><br><br><br><br><br>" + 
     "「悪い」または「異性愛」グループに属するターゲットが現れたら，<strong>E</strong>キーを押してください。<br>" +
     "「良い」または「同性愛」グループに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
     "間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。<br>" + 
@@ -553,8 +572,10 @@ var trial_block7 = {
     is_html: jsPsych.timelineVariable('is_html'),
     stimulus: jsPsych.timelineVariable('stimulus'),
     stim_key_association: jsPsych.timelineVariable('stim_key_association'),
-    html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
-      bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+    // html_when_wrong: '<span style="color: red; font-size: 80px">Ｘ</span>',
+    // bottom_instructions: '<p>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</p>',
+    html_when_wrong: '<span style="position: fixed; top: 80%; left: 10%; right: 10%; color: red; font-size: 80px">Ｘ</span>',
+    bottom_instructions: "<div style='position: fixed; top: 90%; left: 10%; right: 10%'>間違えると赤いＸが現れます。反対のキーを押して，次に進んでください。</div>",
     force_correct_key_press: true,
     display_feedback: true,
     trial_duration: 3000, //Only if display_feedback is false
@@ -634,7 +655,8 @@ var debrief_block = {
 var timeline = [];
 
 timeline.push(welcome_block);
-timeline.push(category_block);
+timeline.push(category_block_1);
+timeline.push(category_block_2);
 timeline.push(instructions_block);
 timeline.push(trial_block);
 timeline.push(instructions_block2);
