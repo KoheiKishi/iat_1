@@ -12,8 +12,8 @@ var welcome_block = {
 
 var category_block_1 = {
   type: 'html-keyboard-response',
-  stimulus: '<p>これから，いくつかのターゲット（単語と画像）を呈示します。' + 
-  '<br>それらをEキーとIキーを使って，4つのグループに分類していただきます。' + 
+  stimulus: '<p>これから，いくつかのターゲット（単語と画像）を画面の中央に呈示します。' + 
+  '<br>それらを，<strong>E</strong>キーと<strong>I</strong>キーを使って，4つのグループに分類していただきます。' + 
   '<br>グループと，それぞれに属する単語と画像は，次のページの通りです。<br><br>' +
   "スペースキーを押して，次に進んでください。</p>",
   choices: ['space'],
@@ -31,7 +31,7 @@ var category_block_2 = {
   "<img src='" + repo_site + "img/03_hetero_symbol.jpg'></img>  " + "<img src='" + repo_site + "img/04_hetero_symbol_mirror.jpg'></img>  " +
   "<img src='" + repo_site + "img/07_hetero_doll.jpg'></img>  " + "<img src='" + repo_site + "img/08_hetero_doll_mirror.jpg'></img>  " +
   '異性愛　異性愛者<br><br>' +
-  "スペースキーを押して，次に進んでください。</p>",
+  "スペースキーを押して，練習ブロックに進んでください。</p>",
   choices: ['space'],
   post_trial_gap: 1000
 };
