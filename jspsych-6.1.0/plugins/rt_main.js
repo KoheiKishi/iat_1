@@ -179,7 +179,7 @@ var trial_block3_1 = {
       left_category_label: ['悪い', '同性愛'],
       right_category_label: ['良い', '異性愛'],
       response_ends_trial: true,
-      data: { iat_type: 'practice' }
+      data: { iat_type: 'bad-homo' }
     }
   ],
   timeline_variables: [
@@ -443,7 +443,7 @@ var trial_block5 = {
       left_category_label: ['悪い', '異性愛'],
       right_category_label: ['良い', '同性愛'],
       response_ends_trial: true,
-      data: {iat_type: 'practice'}
+      data: {iat_type: 'bad-het'}
     }
     ],
     timeline_variables: [
