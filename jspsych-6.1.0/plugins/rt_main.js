@@ -31,7 +31,8 @@ var category_block_2 = {
   "<img src='" + repo_site + "img/03_hetero_symbol.jpg'></img>  " + "<img src='" + repo_site + "img/04_hetero_symbol_mirror.jpg'></img>  " +
   "<img src='" + repo_site + "img/07_hetero_doll.jpg'></img>  " + "<img src='" + repo_site + "img/08_hetero_doll_mirror.jpg'></img>  " +
   '異性愛　異性愛者<br><br>' +
-  "スペースキーを押して，練習ブロックに進んでください。</p>",
+  '本実験は7つのブロックからなっています。<br>' +
+  "スペースキーを押して，一つ目のブロックに進んでください。</p>",
   choices: ['space'],
   post_trial_gap: 1000
 };
