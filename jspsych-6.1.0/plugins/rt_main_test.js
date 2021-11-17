@@ -484,7 +484,7 @@ var trial_block5 = {
       {type: 'iat-html', stimulus: "幸せな", stim_key_association: "right"}
     ],
     randomize_order: true,
-    repetitions: 2
+    repetitions: 1
   };
 /* 
   var instructions_block6_2 = {
@@ -563,7 +563,7 @@ var trial_block5 = {
     "<strong>悪い</strong><br><br>" + "<strong>異性愛</strong></p></div>" + "<div style='position: absolute; top: 18%; right: 20%'>" + 
     "<p style='font-size:24pt'>I<br><br>" + "<strong>良い</strong><br><br>" + "<strong>同性愛</strong></p></div>" +
     "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><strong>【ブロック7】<br>（本番）</strong><br><br><br><br><br><br>" +
-    "直前と同じ配置です。<br>" +
+    "直前と同じ配置で，長さが倍です。<br>" +
     "これが最後のブロックです。<br><br>" + 
     "「悪い」または「異性愛」グループに属するターゲットが現れたら，<strong>E</strong>キーを押してください。<br>" +
     "「良い」または「同性愛」グループに属するターゲットが現れたら，<strong>I</strong>キーを押してください。<br><br>" +
